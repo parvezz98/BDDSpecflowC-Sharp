@@ -11,7 +11,7 @@ namespace BDDSpecFlowProject.Hooks
     public sealed class TestInitialize
     {
         [BeforeTestRun]
-        public static void BeforeTest() {
+        public static void BeforeTest() { // By default these methods should be static as per SpecFlow Doc
             Console.WriteLine("******** This Line will execute Before Test ****");
         }
         [BeforeFeature]
