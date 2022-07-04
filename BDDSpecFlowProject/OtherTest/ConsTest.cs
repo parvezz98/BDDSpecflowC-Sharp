@@ -9,18 +9,19 @@ namespace BDDSpecFlowProject.OtherTest
 {
     public class ConsTest
     {
-        static  ConsTest(){
+         static ConsTest(){
             Console.WriteLine("Test const");
 
         }
-        static void simpleMethod()=> Console.WriteLine("Non Constracxtuctor");
+         void simpleMethod()=> Console.WriteLine("Non Constracxtuctor");
         
         [Test]
         public void mainn()
         {
-            //ConsTest d=  new ConsTest();
-           // ConsTest();
-            simpleMethod();
+            ConsTest d=  new ConsTest();
+            
+          //  ConsTest();
+            d.simpleMethod();
             
         }
     }
