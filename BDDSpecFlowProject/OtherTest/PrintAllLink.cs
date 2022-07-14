@@ -28,7 +28,9 @@ namespace BDDSpecFlowProject.OtherTest
             }
             el[7].Click();
             Thread.Sleep(2000);
-            drvr.Quit();
+            IList<string> st = drvr.WindowHandles.ToList();
+
+                drvr.Quit();
         }
     }
 }
